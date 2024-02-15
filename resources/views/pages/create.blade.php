@@ -1,9 +1,9 @@
 @extends('layouts.main-layout')
 @section('head')
-    <title>Home</title>
+    <title>Creazione nuova card fumetto</title>
 @endsection
 @section('content')
-    <div class="container">
+    <div class="container create">
 
         <div class="card">
             <h1>CREAZIONE DEL NUOVO FUMETTO</h1>
@@ -21,13 +21,13 @@
                   <div class="mb-3 row">
                     <label for="publication_date" class="col-sm-2 col-form-label">Data di pubblicazione</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="publication_date" name="publication_date">
+                        <input type="date" class="form-control" id="publication_date" name="publication_date">
                     </div>
                   </div>
                   <div class="mb-3 row">
                     <label for="price" class="col-sm-2 col-form-label">Prezzo in €</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="price" name="price">
+                        <input type="number" class="form-control" id="price" name="price">
                     </div>
                   </div>
                   <div class="mb-3 row">
@@ -36,9 +36,9 @@
                         <input type="text" class="form-control" id="avaible" name="avaible">
                     </div>
                   </div>
+                  <input type="submit" value="CREA">
             </form>
 
-            <input type="submit" value="CREA">
         </div>
 
     </div>

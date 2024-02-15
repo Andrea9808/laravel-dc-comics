@@ -1,3 +1,137 @@
 @import "~bootstrap/scss/bootstrap";
 
 
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.index {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+    h1 {
+        color: #ff4500; /* Orange-Red color */
+    }
+
+    a {
+        color: #007bff; /* Blue color */
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 10px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h6 {
+        color: #333;
+        margin: 0;
+    }
+
+}
+
+
+.show {
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        border: 1px solid #ddd;
+        margin: 20px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        height: 500px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    h6 {
+        color: #333;
+        margin: 5px 0;
+    }
+
+    h6:first-child {
+        font-size: 1.5em;
+        color: #ff4500;
+    }
+
+    h6:nth-child(2) {
+        font-size: 1.2em;
+    }
+
+    h6:nth-child(3) {
+        font-size: 1.2em;
+        color: #007bff;
+    }
+
+    h6:last-child {
+        font-size: 1.2em;
+        color: #28a745;
+    }
+}
+
+
+.create {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+    .card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        color: #ff4500;
+        margin-bottom: 20px;
+    }
+
+
+    label {
+        font-size: 1.2em;
+        color: #333;
+    }
+
+
+    input[type="submit"] {
+        background-color: #007bff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+}
+
+

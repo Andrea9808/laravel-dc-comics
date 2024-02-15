@@ -21,6 +21,7 @@ class ComicFactory extends Factory
             'publication_date'=>fake()->dateTime(),
             'price'=>fake()->randomFloat(1, 3, 15),
             'avaible'=>fake()->boolean(),
+
         ];
     }
 }

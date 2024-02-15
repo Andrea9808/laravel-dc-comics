@@ -20,6 +20,7 @@ return new class extends Migration
             $table->date('publication_date');
             $table->decimal('price');
             $table->boolean('avaible')->default(true);
+            $table->string('img')->default('https://tse2.mm.bing.net/th?id=OIP.k_Tpsn8ljznLcJVwn0-ipAHaDt&pid=Api&P=0&h=180');
 
             $table->timestamps();
         });
