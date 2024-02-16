@@ -28,7 +28,7 @@
                             @csrf
                             @method('DELETE')
 
-                            <input  type="submit" value="X">
+                            <button onclick="confirmDelete(event)">X</button>
                         </form>
                     </div>
                 </div>
@@ -37,3 +37,16 @@
         @endforeach
     </div>
 @endsection
+
+<script>
+    function confirmDelete(event) {
+    let isConfirmed = confirm('Sei sicuro di voler eliminare questo elemento?');
+
+    if (isConfirmed) {
+        alert('Elemento cancellato con successo');
+    } else {
+        alert('Operazione annullata');
+        event.preventDefault();
+    }
+}
+</script>
