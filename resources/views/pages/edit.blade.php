@@ -1,6 +1,6 @@
 @extends('layouts.main-layout')
 @section('head')
-    <title>Creazione nuova card fumetto</title>
+    <title>Modifica card fumetto</title>
 @endsection
 @section('content')
     <div class="container create">
