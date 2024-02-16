@@ -17,6 +17,9 @@
                         <a href="{{ route('comic.show', $comic->id) }}">
                             <h6>{{$comic->name}}</h6>
                         </a>
+                        <a href="{{route('comic.edit', $comic->id)}}">
+                            Modifica
+                        </a>
                     </div>
 
                     <div class="col-6">
