@@ -7,6 +7,15 @@
 
         <div class="card">
             <h1>CREAZIONE DEL NUOVO FUMETTO</h1>
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <form action="{{route('comic.store')}}" method="POST">
 
                 @csrf

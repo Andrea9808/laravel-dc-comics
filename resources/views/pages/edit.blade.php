@@ -8,6 +8,15 @@
         <div class="card">
             <h1>MODIFICA DEL FUMETTO</h1>
             <h1>[{{$comics->id}}]</h1>
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <form action="{{route('comic.update', $comics->id)}}" method="POST">
 
                 @csrf
